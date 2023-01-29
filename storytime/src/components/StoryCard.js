@@ -15,9 +15,11 @@ const CustomCard = styled(Card)({
   maxWidth: 345,
   backgroundColor: '#a3afc7',
   transition: '0.3s',
+  opacity: 0.8,
   "&:hover": {
-    backgroundColor: '#899db4',
-    transform: 'scale(1.1)'
+    backgroundColor: '#fbfcff',
+    transform: 'scale(1.1)',
+	opacity: 1
   }
 
 });

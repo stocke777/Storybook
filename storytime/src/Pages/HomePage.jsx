@@ -5,8 +5,14 @@ import StoryCard from "./../components/StoryCard";
 import image1 from '../assets/night.jpg'
 import image2 from '../assets/rain.jpg'
 import image3 from '../assets/snow.jpg'
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+
+  const navigate = useNavigate()
+  const handleClick = (story) => {
+    navigate(`/${story}/1`)
+  }
   return (
     <>
       <ParticlesBackground></ParticlesBackground>
@@ -21,6 +27,7 @@ function HomePage() {
         Select which path to take
       </Button>
       <Box display='flex' justifyContent='space-around' align-items='center' mt={2}>
+        <Box onClick={()=>handleClick('NightRide')}>
         <StoryCard
           title='Last Ride'
           image={image1}
@@ -31,6 +38,8 @@ function HomePage() {
           subHeader='Night Ambience'
           alt='Lonely Road'>
         </StoryCard>
+        </Box>
+        <Box onClick={()=>handleClick('UpTheHill')}>
         <StoryCard
           title='Up the Hill'
           image={image2}
@@ -41,6 +50,8 @@ function HomePage() {
           subHeader='Rain Ambience'
           alt='Lonely Road'>
         </StoryCard>
+        </Box>
+        <Box onClick={()=>handleClick('WhiteLie')}>
         <StoryCard
           title='White Lie'
           image={image3}
@@ -51,6 +62,7 @@ function HomePage() {
           subHeader='Snow Ambience'
           alt='Lonely Road'>
         </StoryCard>
+        </Box>
       </Box>
     </>
   );

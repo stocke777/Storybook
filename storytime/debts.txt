@@ -1,0 +1,3 @@
+debts
+
+blur other cards when hovered over one of them
