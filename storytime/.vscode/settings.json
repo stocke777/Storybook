@@ -1,0 +1,8 @@
+{
+    "prettier.useTabs": true,
+    "prettier.singleQuote": false,
+    "prettier.singleAttributePerLine": true,
+    "prettier.proseWrap": "always",
+    "prettier.jsxSingleQuote": true,
+    "prettier.bracketSameLine": true
+}
