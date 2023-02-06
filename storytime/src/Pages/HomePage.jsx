@@ -1,6 +1,6 @@
 import React from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
-import { Button, Typography, Paper, Box } from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import StoryCard from "./../components/StoryCard";
 import image1 from '../assets/night.jpg'
 import image2 from '../assets/rain.jpg'
