@@ -52,15 +52,15 @@ function UpTheHill() {
             />
             <div className='paper'>
                 {page === '1' &&
-                    <StoryPage storyName={'NightRide'} pageNumber={Number(page)} left={'Steer Left'} right={'Steer Right'}>
+                    <StoryPage storyName={'UpTheHill'} pageNumber={Number(page)} left={'Steer Left'} right={'Steer Right'}>
                         {content}
                     </StoryPage>}
                 {page === '2' &&
-                    <StoryPage storyName={'NightRide'} pageNumber={Number(page)} left={'Ask For Help'} right={'Dont Ask For Help'}>
+                    <StoryPage storyName={'UpTheHill'} pageNumber={Number(page)} left={'Ask For Help'} right={'Dont Ask For Help'}>
                         {content}
                     </StoryPage>}
                 {page === '4' &&
-                    <StoryPage storyName={'NightRide'} pageNumber={Number(page)} left={'Point Out his Weird Behaviour'} right={'Keep Silent'}>
+                    <StoryPage storyName={'UpTheHill'} pageNumber={Number(page)} left={'Point Out his Weird Behaviour'} right={'Keep Silent'}>
                         {content}
                     </StoryPage>}
             </div>

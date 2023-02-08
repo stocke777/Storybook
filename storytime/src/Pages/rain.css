@@ -27,10 +27,10 @@
 .scene i{
     position: absolute;
     background: whitesmoke;
-    animation: animate linear infinite;
+    animation: animateRain linear infinite;
 }
 
-@keyframes animate{
+@keyframes animateRain{
     0%{
         opacity: 0;
         transform: translateY(0);
