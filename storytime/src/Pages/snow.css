@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.snowscene{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#cfd1e2, #d5b8c1);
+    overflow: hidden;
+    background-attachment: fixed;
+
+}
+
+
+.snow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    transform:scale(1.1);   
+}
+
+.snowscene i{
+    position: absolute;
+    background: rgb(192, 185, 185);
+    border-radius: 50%;
+    animation: animateSnow linear infinite;
+}
+
+@keyframes animateSnow{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%, 90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(20px, 50px);
+    }
+}
