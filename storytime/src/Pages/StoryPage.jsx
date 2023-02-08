@@ -25,7 +25,7 @@ function StoryPage({ storyName, pageNumber, left, right, children }) {
         <>
             <Box display='flex' justifyContent='space-around' alignItems='center' flexDirection='column' my={10}>
                 <Box display='flex' justifContent='start' width='100%' pt={3} px={3}>
-                    <BackButton onClick={() => handleNavigate(pageNumber - 1)}><ArrowBackIcon /></BackButton>
+                    <BackButton onClick={() => navigate(-1)}><ArrowBackIcon /></BackButton>
                 </Box>
 
                 <Box px={8} py={8}>

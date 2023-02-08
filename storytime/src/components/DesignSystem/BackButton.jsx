@@ -1,15 +1,15 @@
-import * as React from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
 
 const StyledButton = styled(Button)({
-  color: 'darkslategray',
-  backgroundColor: '#757575',
+  color: '#f5870cf2',
+  backgroundColor: '#f5870c00',
+  transform: 'Scale(1.2)',
   padding: 8,
   borderRadius: '25px',
   "&:hover": {
-    backgroundColor: '#fff',
-    color: 'black',
+    backgroundColor: '#f5870cf2',
+    color: '#fff',
     transform: 'Scale(1.2)',
   }
 });
